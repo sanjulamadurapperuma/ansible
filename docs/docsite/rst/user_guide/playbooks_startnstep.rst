@@ -22,11 +22,15 @@ In this example, Ansible starts executing your playbook at a task named "install
 Step mode
 ---------
 
-To execute a playbook interactively, use ``--step``::
+To execute a playbook interactively, use ``--step``:
+
+.. code-block:: shell
 
     ansible-playbook playbook.yml --step
 
-With this option, Ansible stops on each task, and asks if it should execute that task. For example, if you have a task called "configure ssh", the playbook run will stop and ask::
+With this option, Ansible stops on each task, and asks if it should execute that task. For example, if you have a task called "configure ssh", the playbook run will stop and ask:
+
+..code-block:: shell
 
     Perform task: configure ssh (y/n/c):
 
